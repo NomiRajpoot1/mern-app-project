@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y \
 RUN mkdir -p /data/db && chown -R mongodb:mongodb /data/db
 
 # Clone the application files into the container
-ADD https://github.com/NomiRajpoot1/mern-app.git .
+ADD https://github.com/NomiRajpoot1/mern-app-project.git .
 
 # Install dependencies for the entire application
 RUN npm install
