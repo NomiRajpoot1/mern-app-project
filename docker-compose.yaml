@@ -1,1 +1,12 @@
 
+services:
+  app:
+    build: 
+      context: .       # The directory where your Dockerfile is located (usually the current directory)
+      dockerfile: Dockerfile
+      no_cache: true
+    image: mern-app-image  # Name for the image built from the Dockerfile
+    container_name: mern-app
+    hostname: mern_app
+    ports:
+      - "5000:5000"
